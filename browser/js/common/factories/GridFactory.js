@@ -133,7 +133,6 @@ app.factory('GridFactory', function($http, $compile, PageFactory, ProjectFactory
     }
 
     // Check number siblings that exist on grid when removed.
-
     GridFactory.checkSiblingCount = function(element){
       return element.siblings().length === 0;
     }

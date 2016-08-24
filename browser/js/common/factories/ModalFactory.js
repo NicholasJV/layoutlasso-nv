@@ -77,7 +77,7 @@ ModalFactory.launchEditHtmlModal = function (scope, id){
     }
 
 
-    ModalFactory.launchAddComponentsModal = function (scope, id) {
+ModalFactory.launchAddComponentsModal = function (scope, id) {
       ModalFactory.addComponentsModal = $uibModal.open({
         animation: scope.animationsEnabled,
         templateUrl: '/js/add-components-modal/add-components.html',
