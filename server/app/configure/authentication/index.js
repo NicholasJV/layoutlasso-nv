@@ -8,9 +8,13 @@ var mongoose = require('mongoose');
 var UserModel = mongoose.model('User');
 
 var ENABLED_AUTH_STRATEGIES = [
+    // local e-mail/password only enabled for dev.
+    // Uncomment to enable more strategies, then modify dev env.
+    // To make this work you will need to set up project credentials
+    // and put goauth.js and githubauth.js files at root
     'local',
-    'google',
-    'github'
+    // 'google',
+    // 'github'
 ];
 
 module.exports = function (app) {
